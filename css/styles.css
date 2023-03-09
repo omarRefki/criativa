@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oxygen+Mono&family=Roboto:wght@400;700&family=Work+Sans:ital,wght@0,300;0,500;0,600;0,700;0,800;1,200&display=swap');
+:root{
+--color:#9a8c98;
+--color2:#22223b;
+--color3:#001d3d;
+--color4:#c9ada7;
+
+--sans: oxygen, sans-serif;
+--mono:"oxygen mono", monospace;
+font-size: 1.3rem;
+}
+/* global styles for the page */
+body{
+    background-color: var(--color4);
+padding: 0;
+margin: 0;
+/* عشان انادي اللي في ال رووت */
+font-family: var(--sans); 
+color: var(--color3);
+font-size: var(--font-size);
+}
+
+h1,h2,h3{
+
+    margin: 0;
+
+}
+
+a{
+    color: #22223b;
+}
+a:hover{
+    color: var(--color);
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+#intro{
+  padding:4rem 1rem 10rem 1rem;   
+  padding-bottom:10rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+#intro p{
+ font-size: 1rem;
+ line-height: 1.5; 
+    
+
+}
+#intro .name{
+ font-family: var(--mono);
+ font-size: 1rem; 
+    
+
+}
+ .name span{
+ font-family: var(--sans);
+ font-size: 2rem; 
+ /* عشان اخليها تاخد سطر لوحدها  */
+  display: block; 
+  font-weight: bold; 
+}  
+
+/* header nav section */
+nav{
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+}
+
+nav ul{
+    /* عشان اشيل النقط */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2rem;
+}
+nav li :first-child{
+
+    flex-basis: 100%;
+    text-align: center;
+}
+nav [class*="fa-"] {
+
+ font-size: 150%;   
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.button{
+    background-color: #22223b;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+@media(min-width:850px){
+nav{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li :first-child{
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+}
+
+
+}
